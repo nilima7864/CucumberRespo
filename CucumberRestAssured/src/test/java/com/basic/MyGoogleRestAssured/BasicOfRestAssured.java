@@ -1,14 +1,14 @@
 package com.basic.MyGoogleRestAssured;
 
 import org.junit.Assert;
-import org.testng.annotations.Test;
+
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class BasicOfRestAssured {
 	
-	@Test
+	//@Test
 	public void TestGoogle() {
 		Response res= RestAssured.get("http://google.com/");
 		int actualStateCode = res.getStatusCode();
@@ -17,7 +17,7 @@ public class BasicOfRestAssured {
 	}
 
 	
-	@Test
+	//@Test
 	public void TestF1() {
 		Response res= RestAssured.get("http://ergast.com/api/f1/2017/circuits");
 		int actualStateCode = res.getStatusCode();
